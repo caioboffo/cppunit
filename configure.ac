@@ -1,0 +1,7 @@
+AC_PREREQ([2.69])
+AC_INIT([MoneyApp], [1.0])
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+AC_PROG_CXX
+PKG_CHECK_MODULES([CPPUNIT], [cppunit >= 1.14-0])
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
