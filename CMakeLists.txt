@@ -9,3 +9,6 @@ find_package(PkgConfig)
 pkg_check_modules(CPPUNIT cppunit)
 
 target_link_libraries( cppunit_app ${CPPUNIT_LIBRARIES})
+
+enable_testing()
+add_test( money_test cppunit_app )
